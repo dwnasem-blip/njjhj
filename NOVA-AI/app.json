@@ -1,0 +1,50 @@
+{
+  "expo": {
+    "name": "NOVA AI",
+    "slug": "nova-ai-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "novaai",
+    "userInterfaceStyle": "automatic",
+    "sdkVersion": "58.0.0",
+    "platforms": [
+      "ios"
+    ],
+    "ios": {
+      "supportsTabletMode": false,
+      "requireFullScreen": true,
+      "infoPlist": {
+        "NSLocalNetworkUsageDescription": "Required to access local services",
+        "NSBonjourServiceTypes": [
+          "_http._tcp",
+          "_ws._tcp"
+        ]
+      }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "set-me-after-eas-init"
+      }
+    },
+    "web": {
+      "output": "server",
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#6D28D9",
+          "image": "./assets/images/splash-icon.png",
+          "imageWidth": 100
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true,
+      "reactCompiler": true
+    }
+  }
+}
